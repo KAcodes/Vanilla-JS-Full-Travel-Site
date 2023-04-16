@@ -253,10 +253,11 @@ header {
   }
 
 .banner {
-    min-height: 100vh;
+    height: 100%;
     display: grid;
     place-items: center;
     text-align: center;
+    
   }
 
 .video-container {
@@ -269,6 +270,10 @@ header {
     z-index: -2;
   }
 
+  .container {
+    position: absolute;
+    top: 50%;
+  }
   .container h1 {
     color: var(--clr-white);
     text-transform: uppercase;
@@ -280,3 +285,72 @@ header {
     margin-bottom: 1.25rem;
   }
 
+
+
+  /* sections and title */
+
+.section {
+  margin-bottom: 5rem;
+}
+
+#main-content {
+  display: grid;
+  place-items: center;
+}
+
+.article {
+  width: 80vw;
+}
+
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.slider {
+  width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 600px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
