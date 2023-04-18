@@ -349,8 +349,20 @@ header {
   transform: scale(1);
   transition: transform 0.5s;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+
+}
+
+.continent-info {
+  display: flex;
+}
+
+.continent-info div {
+  width: 50%;
+}
+
+.country-pics {
+  width: 30px;
+  height: 20px;
 }
