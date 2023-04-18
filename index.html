@@ -1,293 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header id="home">
-        <video controls muted autoplay loop class="video-container">
-            <source src="./videos/banner-video.mp4" type="video/mp4" />
-        </video>
-        <nav id="nav">
-          <div class="nav-center">
-            <!--nav-header-->
-            <div class="nav-header">
-              <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-              </button>
+  <header id="home">
+    <video controls muted autoplay loop class="video-container">
+      <source src="./videos/banner-video.mp4" type="video/mp4" />
+    </video>
+    <nav id="nav">
+      <div class="nav-center">
+        <!--nav-header-->
+        <div class="nav-header">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">Home</a>
+            </li>
+            <li>
+              <a href="#countries" class="scroll-link">Countries</a>
+            </li>
+            <li>
+              <a href="#gallery" class="scroll-link">Gallery</a>
+            </li>
+            <li>
+              <a href="#donate" class="scroll-link">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="container">
+        <h1>Kayode's Travels</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate, suscipit laborum sint adipisci
+          odit hic ad iure vero nam voluptates ratione nobis excepturi? Pariatur reprehenderit quisquam error
+          voluptatibus in.</p>
+        <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+      </div>
+    </div>
+  </header>
+
+  <!--content section-->
+  <div id="main-content">
+    <section class="section">
+      <h1>Previous Countries</h1>
+    </section>
+
+    <section class="section">
+      <h1>Coming Up</h1>
+      <article class="review">
+        <div class="align-items-center">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Continent</th>
+                <th scope="col">Travel Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sweden</th>
+                <td>Europe</td>
+                <td id="next-trip">31 May 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Canada</th>
+                <td>North America</td>
+                <td>July 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Spain</th>
+                <td>Europe</td>
+                <td>October 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Ghana</th>
+                <td>Africa</td>
+                <td>December 2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Thailand</th>
+                <td>Asia</td>
+                <td>March 2024</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Next Trip In...</h3>
+          <div class="deadline">
+            <!-- days -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="days">34</h4>
+                <span>days</span>
+              </div>
             </div>
-            <!-- links -->
-            <div class="links-container">
-              <ul class="links">
-                <li>
-                  <a href="#home" class="scroll-link">Home</a>
-                </li>
-                <li>
-                  <a href="#countries" class="scroll-link">Countries</a>
-                </li>
-                <li>
-                  <a href="#gallery" class="scroll-link">Gallery</a>
-                </li>
-                <li>
-                  <a href="#donate" class="scroll-link">Donate</a>
-                </li>
-              </ul>
+            <!-- end of days -->
+            <!-- days -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="hours">34</h4>
+                <span>hours</span>
+              </div>
             </div>
-          </div>
-        </nav>
-  
-        <!-- banner -->
-        <div class="banner">
-          <div class="container">
-            <h1>Kayode's Travels</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate, suscipit laborum sint adipisci odit hic ad iure vero nam voluptates ratione nobis excepturi? Pariatur reprehenderit quisquam error voluptatibus in.</p>
-            <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+            <!-- end of days -->
+            <!-- minutes -->
+            <div class="deadline-format">
+              <div>
+                <h4 class="minutes">34</h4>
+                <span>mins</span>
+              </div>
+            </div>
+            <div class="deadline-format">
+              <div>
+                <h4 class="minutes">34</h4>
+                <span>secs</span>
+              </div>
+            </div>
           </div>
         </div>
-    </header>
+      </article>
+    </section>
+    <section class="section">
+      <div>
+        <h1>Future Expeditions</h1>
+        <div class="slider" id="slider-container">
 
-    <!--content section-->
-    <div id="main-content">
-      <section class="section">
-            <h1>Previous Countries</h1>
-            <article class="review">
-              <h4 id="continent">Europe</h4>
-              <ul id="countries">
-                <li></li>
-              </ul>
-              <!-- prev next buttons-->
-              <div class="button-container">
-                <button class="prev-btn">
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="next-btn">
-                  <i class="fas fa-chevron-right"></i>
-                </button>
+          <div id="continent-titles">
+            <a href="#europe">Europe</a>
+            <a href="#africa">Africa</a>
+            <a href="#north-america">North America</a>
+            <a href="#asia">Asia</a>
+            <a href="#south-america">South America</a>
+            <a href="#australia">North America</a>
+          </div>
+
+          <div class="slides">
+            <!-- europe -->
+            <div class="continent-container" id="europe">
+              <h3>Europe</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Denmark</a></li>
+                    <li><a class="country-search">Croatia</a></li>
+                    <li><a class="country-search">Turkey</a></li>
+                    <li><a class="country-search">Switzerland</a></li>
+                    <li><a class="country-search">Germany</a></li>
+                    <li><a class="country-search">Belgium</a></li>
+                    <li><a class="country-search">Norway</a></li>
+                    <li><a class="country-search">Austria</a></li>
+                    <li><a class="country-search">Ireland</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
               </div>
-              <!-- random button -->
-              <button class="random-btn">surprise me</button>
-            </article>
-      </section>
-      <section class="section">
-        <h1>Next Trip</h1>
+            </div>
+            <!--africa-->
+            <div class="continent-container" id="africa">
+              <h3>Africa</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Ghana</a></li>
+                    <li><a class="country-search">Nigeria</a></li>
+                    <li><a class="country-search">South Africa</a></li>
+                    <li><a class="country-search">Gambia</a></li>
+                    <li><a class="country-search">Senegal</a></li>
+                    <li><a class="country-search">Egypt</a></li>
+                    <li><a class="country-search">Morocco</a></li>
+                    <li><a class="country-search">Tanzania</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
+              </div>
+            </div>
+            <!--north america-->
+            <div class="continent-container" id="north-america">
+              <h3>North America</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Dominican Republic</a></li>
+                    <li><a class="country-search">Jamaica</a></li>
+                    <li><a class="country-search">Dominica</a></li>
+                    <li><a class="country-search">United States of America</a></li>
+                    <li><a class="country-search">Canada</a></li>
+                    <li><a class="country-search">Cuba</a></li>
+                    <li><a class="country-search">Turks and Caicos</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
+              </div>
+            </div>
+            <!-- asia -->
+            <div class="continent-container" id="asia">
+              <h3>Asia</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Thailand</a></li>
+                    <li><a class="country-search">United Arab Emirates</a></li>
+                    <li><a class="country-search">Maldives</a></li>
+                    <li><a class="country-search">Republic of the Philippines</a></li>
+                    <li><a class="country-search">Malaysia</a></li>
+                    <li><a class="country-search">Saudi Arabia</a></li>
+                    <li><a class="country-search">Japan</a></li>
+                    <li><a class="country-search">China</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
+              </div>
+            </div>
+            <!-- south america -->
+            <div class="continent-container" id="south-america">
+              <h3>South America</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Brazil</a></li>
+                    <li><a class="country-search">Colombia</a></li>
+                    <li><a class="country-search">Argentina</a></li>
+                    <li><a class="country-search">Peru</a></li>
+                    <li><a class="country-search">Guyana</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
+              </div>
+            </div>
+            <!--australia-->
+            <div class="continent-container" id="australia">
+              <h3>Australia</h3>
+              <div class="continent-info">
+                <div>
+                  <ul>
+                    <li><a class="country-search">Australia</a></li>
+                    <li><a class="country-search">Fiji</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <img src="https://flagcdn.com/16x12/tr.png" alt="country flag" class="country-pics" />
+                  <p class="capital-search"></p>
+                  <p class="population-search"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div>
+        <h1>Gallery</h1>
         <article class="review">
-          
+          <h4 id="continent">Europe</h4>
+          <ul id="countries">
+            <li></li>
+          </ul>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <button class="random-btn">surprise me</button>
         </article>
-  </section>
-      <section class="section">
-          <div>
-              <h1>Future Expeditions</h1>
-              <div class="slider" id="slider-container">
-                
-                <div id="continent-titles">
-                  <a href="#europe">Europe</a>
-                  <a href="#africa">Africa</a>
-                  <a href="#north-america">North America</a>
-                  <a href="#asia">Asia</a>
-                  <a href="#south-america">South America</a>
-                  <a href="#australia">North America</a>
-                </div>
-              
-                <div class="slides">
-                  <!-- europe -->
-                  <div class="continent-container" id="europe">          
-                    <h3>Europe</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Denmark</a></li>
-                          <li><a class="country-search">Croatia</a></li>
-                          <li><a class="country-search">Turkey</a></li>
-                          <li><a class="country-search">Switzerland</a></li>
-                          <li><a class="country-search">Germany</a></li>
-                          <li><a class="country-search">Belgium</a></li>
-                          <li><a class="country-search">Norway</a></li>
-                          <li><a class="country-search">Austria</a></li>
-                          <li><a class="country-search">Ireland</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                        src="https://flagcdn.com/16x12/tr.png"
-                        alt="country flag"
-                        class="country-pics"
-                        />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p> 
-                      </div>
-                    </div>
-                  </div>
-                  <!--africa-->
-                  <div class="continent-container" id="africa">
-                    <h3>Africa</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Ghana</a></li>
-                          <li><a class="country-search">Nigeria</a></li>
-                          <li><a class="country-search">South Africa</a></li>
-                          <li><a class="country-search">Gambia</a></li>
-                          <li><a class="country-search">Senegal</a></li>
-                          <li><a class="country-search">Egypt</a></li>
-                          <li><a class="country-search">Morocco</a></li>
-                          <li><a class="country-search">Tanzania</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                        src="https://flagcdn.com/16x12/tr.png"
-                        alt="country flag"
-                        class="country-pics"
-                        />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--north america-->
-                  <div class="continent-container" id="north-america">
-                    <h3>North America</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Dominican Republic</a></li>
-                          <li><a class="country-search">Jamaica</a></li>
-                          <li><a class="country-search">Dominica</a></li>
-                          <li><a class="country-search">United States of America</a></li>
-                          <li><a class="country-search">Canada</a></li>
-                          <li><a class="country-search">Cuba</a></li>
-                          <li><a class="country-search">Turks and Caicos</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                        src="https://flagcdn.com/16x12/tr.png"
-                        alt="country flag"
-                        class="country-pics"
-                        />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- asia -->  
-                  <div class="continent-container" id="asia">
-                    <h3>Asia</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Thailand</a></li>
-                          <li><a class="country-search">United Arab Emirates</a></li>
-                          <li><a class="country-search">Maldives</a></li>
-                          <li><a class="country-search">Republic of the Philippines</a></li>
-                          <li><a class="country-search">Malaysia</a></li>
-                          <li><a class="country-search">Saudi Arabia</a></li>
-                          <li><a class="country-search">Japan</a></li>
-                          <li><a class="country-search">China</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                          src="https://flagcdn.com/16x12/tr.png"
-                          alt="country flag"
-                          class="country-pics"
-                          />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p>
-                      </div>
-                    </div> 
-                  </div>
-                  <!-- south america -->  
-                  <div class="continent-container" id="south-america">
-                    <h3>South America</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Brazil</a></li>
-                          <li><a class="country-search">Colombia</a></li>
-                          <li><a class="country-search">Argentina</a></li>
-                          <li><a class="country-search">Peru</a></li>
-                          <li><a class="country-search">Guyana</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                        src="https://flagcdn.com/16x12/tr.png"
-                        alt="country flag"
-                        class="country-pics"
-                        />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <!--australia-->
-                  <div class="continent-container" id="australia">
-                    <h3>Australia</h3>
-                    <div class="continent-info">
-                      <div>
-                        <ul>
-                          <li><a class="country-search">Australia</a></li>
-                          <li><a class="country-search">Fiji</a></li>
-                        </ul>
-                      </div>
-                      <div>
-                        <img
-                        src="https://flagcdn.com/16x12/tr.png"
-                        alt="country flag"
-                        class="country-pics"
-                        />
-                        <p class="capital-search"></p>
-                        <p class="population-search"></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </section>
-      <section class="section">
-          <div>
-              <h1>Gallery</h1>
-              <article class="review">
-                <h4 id="continent">Europe</h4>
-                <ul id="countries">
-                  <li></li>
-                </ul>
-                <!-- prev next buttons-->
-                <div class="button-container">
-                  <button class="prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button class="next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
-                </div>
-                <!-- random button -->
-                <button class="random-btn">surprise me</button>
-              </article>
-          </div>
-      </section>
-      <section class="section">
-          <div>
-              <h1>Donate</h1>
-          </div>
-      </section>
-    </div>
-    <footer class="section">
-        <p>copyright &copy; Kayode Travel's
-          <span id="date">2023</span>. all rights reserved
-        </p>
-    </footer>
-    <script src="./app.js"></script>
+      </div>
+    </section>
+    <section class="section">
+      <div>
+        <h1>Donate</h1>
+      </div>
+    </section>
+  </div>
+  <footer class="section">
+    <p>copyright &copy; Kayode Travel's
+      <span id="date">2023</span>. all rights reserved
+    </p>
+  </footer>
+  <script src="./app.js"></script>
 </body>
+
 </html>

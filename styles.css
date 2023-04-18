@@ -366,3 +366,20 @@ header {
   width: 30px;
   height: 20px;
 }
+
+/* Coming up section */
+
+.deadline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.deadline > div {
+  width: 50px;
+  background-color: aqua;
+  margin: 10px;
+  display: grid;
+  place-items: center;
+
+}
